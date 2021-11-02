@@ -1,15 +1,12 @@
 window.onload = function(){
   var searchBtn = document.getElementById("search");
-  //var name = document.getElementById("name");
   
-
   searchBtn.addEventListener("click", function(event){
     event.preventDefault();
     var httpRequest = new XMLHttpRequest();
     var query = document.querySelector("input");
     var input = query.value;
     var valid = false;
-    //var url = "http://localhost/info2180-lab4/superheroes.php?query="+input;
 
     if (!isValidInput(input.trim())) {
       valid = false;
