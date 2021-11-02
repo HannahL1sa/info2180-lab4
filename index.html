@@ -7,9 +7,20 @@
         <script src="app.js"></script>
     </head>
     <body>
+        <header>
+            <h1>AVENGERS CHARACTER SEARCH</h1>
+        </header>
         <div class="container">
-          <h1>Avengers Character Search</h1>
-          <button type="button" id="search" class="btn">Search</button>
+            <form >
+                <div class="form-group">
+                    <label for="site-search">Search by Full Name or Alias</label>
+                    <input type="search" name= "name" id="name" placeholder="   eg.Captain America or Steve Rogers">
+                    <button type="button" id="search" class="btn">Search</button>
+                </div>
+              </form>
+            <h2>RESULT</h2>
+            <hr>
+            <div id="result"></div>
         </div>
     </body>
 </html>
